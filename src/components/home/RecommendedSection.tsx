@@ -7,7 +7,7 @@ interface RecommendedSectionProps {
 
 export function RecommendedSection({ recommendedPetshops }: RecommendedSectionProps) {
   return (
-    <div className="mb-12">
+    <div className="mb-12 text-center">
       <h3 className="text-2xl font-bold text-gray-900 mb-6">Recomendado para você</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {recommendedPetshops.map((petshop) => (
@@ -51,7 +51,7 @@ export function RecommendedSection({ recommendedPetshops }: RecommendedSectionPr
                 {petshop.services.map((service, index) => (
                   <span
                     key={index}
-                    className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
+                    className="bg-yellow-100 text-gray-700 px-2 py-1 rounded text-xs"
                   >
                     {service}
                   </span>
@@ -60,13 +60,23 @@ export function RecommendedSection({ recommendedPetshops }: RecommendedSectionPr
               
               <div className="flex items-center justify-between">
                 <span className="text-green-600 font-semibold">{petshop.price}</span>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                <button className="bg-yellow-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-700 transition-colors">
                   Agendar
                 </button>
               </div>
             </div>
           </div>
         ))}
+       </div>
+
+      {/* Novo campo "Ver mais estabelecimentos" */}
+      <div className="mt-6">
+        <a
+          href="#"
+          className="text-yellow-600 font-medium hover:underline transition-colors"
+        >
+          Ver mais estabelecimentos
+        </a>
       </div>
     </div>
   );
