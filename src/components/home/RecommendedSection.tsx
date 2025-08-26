@@ -69,7 +69,6 @@ export function RecommendedSection({ recommendedPetshops }: RecommendedSectionPr
         ))}
        </div>
 
-      {/* Novo campo "Ver mais estabelecimentos" */}
       <div className="mt-6">
         <a
           href="#"

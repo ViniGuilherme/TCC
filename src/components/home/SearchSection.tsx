@@ -14,7 +14,6 @@ export function SearchSection({ searchQuery, setSearchQuery }: SearchSectionProp
           <Search size={20} />
         </div>
 
-        {/* Input */}
         <input
           type="text"
           placeholder="Buscar petshop, serviço ou localização..."
@@ -23,8 +22,7 @@ export function SearchSection({ searchQuery, setSearchQuery }: SearchSectionProp
           className="flex-1 px-4 py-3 text-gray-700 focus:outline-none"
         />
 
-        {/* Botão */}
-        <button className="text-white bg-yellow-500 px-6 py-3 font-medium hover:bg-yellow-700 transition rounded-full">
+        <button  className="bg-yellow-500 text-white font-semibold px-8 py-2 rounded-full hover:bg-yellow-600 transition ml-2">
           Buscar
         </button>
       </div>
